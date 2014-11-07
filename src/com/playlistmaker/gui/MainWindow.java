@@ -31,7 +31,7 @@ import java.nio.file.Path;
  * - DONE. create technical documentation with functionality description
  * - DONE. test the program
  * - DONE. create distrubutable .jar
- * - move a program to GitHub
+ * - DONE. move a program to GitHub
  * */
 
 public class MainWindow implements ActionListener {
