@@ -1,0 +1,39 @@
+Test scenarios:
+
+- Add and delete several files from different locations. Repeat the cycle several times.
+RESULT: PASS. However it is possible to add two copies of .mp3 from different locations with
+the same name. In this case only one file will be copied to the target directory.
+
+- No folder exists yet. Create a playlist with three files.
+RESULT: PASS.
+
+- Add another three files (one should already exists in a folder). Press "Add"
+RESULT: PASS.
+
+- Add three other files (one should already exists in a folder). Press "Replace"
+RESULT: PASS.
+
+- Add three other files (one should already exists in a folder). Press "Cancel"
+RESULT: PASS.
+
+- Add three other files (one should already exists in a folder). Press "Replace". This time
+try to engage a folder
+RESULT: PASS.
+
+- Add three other files (one should already exists in a folder). Press "ADD". This time
+try to engage files
+RESULT: PASS.
+
+- Add three other files (one should already exists in a folder). Press "Replace". This time
+try to engage files
+RESULT: PASS. However the program is not able to create a proper playlist if some of the files
+in the target directory are engaged in this case. This is a WEAKNESS in the program
+
+Improvements in future versions:
+- remove a weakness when the program is not able to create a proper playlist if some of the files
+in the target directory are engaged.
+- add different type of music files
+- allow a user to configure a playlist directory in GUI
+- add a button which will open target directory
+- add about dialog
+- add help system

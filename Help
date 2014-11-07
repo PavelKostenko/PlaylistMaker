@@ -1,0 +1,32 @@
+Playlist Maker is a tiny program that allows you to create playlists and prepare music files
+for transferring to any audio playback device. Playlist maker allows you to select your favorite
+.mp3 files and copy them to a certain folder where a fresh playlist will will be created based on
+your selection.
+
+"Add mp3 files" button - using this button you can navigate to the music folder and select
+any subset of .mp3 file which you can add to the main panel. Multiselection is allowed. You can
+use this button multiple times.
+
+"Remove selected files" button - using this button you can delete .mp3 files added previously
+to the main panel. To delete a file(s) you need to make a selection previosly. Files will not
+be deleted from the hard disk but from this panel only.
+
+Main Panel - a panel where all .mp3 files are shown which were selected by you and which
+potentially can be copied to a today's playlist folder. You can modify the list by adding new
+files from different location ("Add mp3 files") or removing already added files ("Remove selected
+files").
+
+"Create a folder for listed above files and create a playlist in it" - this button do two things:
+1. copy the files listed in the panel to the today's playlist folder (by default this is
+"d:\Playlists\Playlist_dd_mm_yyyy" folder with today's date in it's name)
+2. creates a playlist based on the list of files which are actually in the folder. This means
+that if there were already some files in this folder Playlist Maker will include this old files
+to the playlist in addition to fresh selection. However this behavior depends on your choice
+during coping conflicts (discussed later).
+
+What if today's playlist folder already exists?
+You'll have a message which will propose you to either replace a folder's content with the current
+selection of files (in this case content of today's playlist folder will be cleared while
+current selection will be copied) or to add current selection of files to the already existing
+folder (in this case current selection will be added to the files which are already in the folder,
+in case of any file-already-exists conflicts old files will not be replaced)
